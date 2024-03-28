@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		99B9755C2BB5D9410093DBD2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 99B9755B2BB5D9410093DBD2 /* README.md */; };
+		99DD98DA2BB428C300339A61 /* APICallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DD98D92BB428C300339A61 /* APICallView.swift */; };
 		D4F66D21288F28A7009F7A80 /* iOS_SwiftUI_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F66D20288F28A7009F7A80 /* iOS_SwiftUI_App.swift */; };
 		D4F66D23288F28A7009F7A80 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F66D22288F28A7009F7A80 /* ContentView.swift */; };
 		D4F66D25288F28AC009F7A80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4F66D24288F28AC009F7A80 /* Assets.xcassets */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		99B9755B2BB5D9410093DBD2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		99DD98D92BB428C300339A61 /* APICallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICallView.swift; sourceTree = "<group>"; };
 		D4F66D1D288F28A7009F7A80 /* iOS Swift Protected API Call.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Swift Protected API Call.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4F66D20288F28A7009F7A80 /* iOS_SwiftUI_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_SwiftUI_App.swift; sourceTree = "<group>"; };
 		D4F66D22288F28A7009F7A80 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -41,6 +45,7 @@
 		D4F66D14288F28A7009F7A80 = {
 			isa = PBXGroup;
 			children = (
+				99B9755B2BB5D9410093DBD2 /* README.md */,
 				D4F66D1F288F28A7009F7A80 /* iOS Swift Protected API Call */,
 				D4F66D1E288F28A7009F7A80 /* Products */,
 			);
@@ -59,6 +64,7 @@
 			children = (
 				D4F66D20288F28A7009F7A80 /* iOS_SwiftUI_App.swift */,
 				D4F66D22288F28A7009F7A80 /* ContentView.swift */,
+				99DD98D92BB428C300339A61 /* APICallView.swift */,
 				D4F66D30288FA318009F7A80 /* Profile.swift */,
 				D4F66D2E288FA2C7009F7A80 /* Auth0.plist */,
 				D4F66D24288F28AC009F7A80 /* Assets.xcassets */,
@@ -141,6 +147,7 @@
 			files = (
 				D4F66D2F288FA2C7009F7A80 /* Auth0.plist in Resources */,
 				D4F66D28288F28AC009F7A80 /* Preview Assets.xcassets in Resources */,
+				99B9755C2BB5D9410093DBD2 /* README.md in Resources */,
 				D4F66D25288F28AC009F7A80 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -153,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4F66D23288F28A7009F7A80 /* ContentView.swift in Sources */,
+				99DD98DA2BB428C300339A61 /* APICallView.swift in Sources */,
 				D4F66D31288FA318009F7A80 /* Profile.swift in Sources */,
 				D4F66D21288F28A7009F7A80 /* iOS_SwiftUI_App.swift in Sources */,
 			);
@@ -287,7 +295,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"iOS Swift Protected API Call/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = LJ49LAB3TY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -316,7 +324,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"iOS Swift Protected API Call/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = LJ49LAB3TY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

@@ -18,41 +18,56 @@ import Auth0
 struct ContentView: View {
   
   @State private var isAuthenticated = false
+  @State private var isAPICall = false
   @State var userProfile = Profile.empty
   
   var body: some View {
       
     if isAuthenticated {
-      
-      // “Logged in” screen
-      // ------------------
-      // When the user is logged in, they should see:
-      //
-      // - The title text “You’re logged in!”
-      // - Their photo
-      // - Their name
-      // - Their email address
-      // - The "Log out” button
-      
-      VStack {
-        
-        Text("You’re logged in!")
-          .modifier(TitleStyle())
-  
-        UserImage(urlString: userProfile.picture)
-        
-        VStack {
-          Text("Name: \(userProfile.name)")
-          Text("Email: \(userProfile.email)")
+        if isAPICall {
+            
+            APICallView()
+            
+        } else {
+            // “Logged in” screen
+            // ------------------
+            // When the user is logged in, they should see:
+            //
+            // - The title text “You’re logged in!”
+            // - Their photo
+            // - Their name
+            // - Their email address
+            // - The "Log out” button
+            
+            VStack {
+                
+                Text("You’re logged in!")
+                    .modifier(TitleStyle())
+                
+                UserImage(urlString: userProfile.picture)
+                
+                VStack {
+                    Text("Name: \(userProfile.name)")
+                    Text("Email: \(userProfile.email)")
+                }
+                .padding()
+                
+                HStack {
+                    
+                    Button("Log out") {
+                        logout()
+                    }
+                    .buttonStyle(MyButtonStyle())
+                    
+                    Button("Call API") {
+                        isAPICall = true;
+                    }
+                    .buttonStyle(MyButtonStyle())
+                    
+                } // HStack
+                
+            } // VStack
         }
-        .padding()
-        
-        Button("Log out") {
-          logout()
-        }
-        .buttonStyle(MyButtonStyle())
-        
-      } // VStack
     
     } else {
       
@@ -141,8 +156,12 @@ struct ContentView: View {
 extension ContentView {
   
   func login() {
+    let credentialsManager = CredentialsManager(authentication: Auth0.authentication())
+
     Auth0
       .webAuth()
+      .audience("https://myapi.com")
+      .scope("openid profile email read:events")
       .start { result in
         switch result {
           case .failure(let error):
@@ -151,8 +170,11 @@ extension ContentView {
           case .success(let credentials):
             self.isAuthenticated = true
             self.userProfile = Profile.from(credentials.idToken)
+            // Pass the credentials over to the Credentials Manager
+            let _ = credentialsManager.store(credentials: credentials)
             print("Credentials: \(credentials)")
             print("ID token: \(credentials.idToken)")
+            print("Access token: \(credentials.accessToken)")
         }
       }
   }
@@ -171,7 +193,10 @@ extension ContentView {
         }
       }
   }
-  
+    
+  func callAPI() {
+
+  }
 }
 
 

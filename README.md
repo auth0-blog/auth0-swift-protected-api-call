@@ -1,10 +1,10 @@
-# Companion projects for the video _Integrating Auth0 within a SwiftUI App_
+# Companion project for the Auth0 Blog _Calling a protected API from an iOS Swift App_ 
 
 ## Project Description
 
 <img src="https://images.ctfassets.net/23aumh6u8s0i/2vCUITSZoWh5vx9rvaT23o/7f5a6ba12dd7948f2a93374a485e2abe/starter_app_1.png" alt="Demo app’s “Logged out” screen." width="250" />&nbsp;&nbsp;&nbsp;<img src="https://images.ctfassets.net/23aumh6u8s0i/EYzWjMRx1fIiX9rU4Jd99/0a85c0549351669da425b614b6e82a8f/updated_logged_in_screen.png" alt="Demo app’s “Logged in” screen." width="250" />
 
-This repository contains bot the starter and completed versions of the project featured in the Auth0 video **_Integrating Auth0 within a SwiftUI App_**. The video walks the viewer through the process of adding [Auth0](https://auth0.com/) authentication to an iOS app based on the [SwiftUI](https://developer.apple.com/xcode/swiftui/) framework.
+This repository contains completed version of the project featured in the Auth0 Blog **_Calling a protected API from an iOS Swift App_**. The article walks the viewer through the process of calling a protected API once integrated with [Auth0](https://auth0.com/) authentication in an iOS app based on the [SwiftUI](https://developer.apple.com/xcode/swiftui/) framework.
 
 The resulting app is simple, with two screens. The first is the “Logged out” screen, which appears when the app is launched:
 
