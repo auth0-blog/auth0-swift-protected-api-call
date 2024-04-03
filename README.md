@@ -2,30 +2,7 @@
 
 ## Project Description
 
-<img src="https://images.ctfassets.net/23aumh6u8s0i/2vCUITSZoWh5vx9rvaT23o/7f5a6ba12dd7948f2a93374a485e2abe/starter_app_1.png" alt="Demo app’s “Logged out” screen." width="250" />&nbsp;&nbsp;&nbsp;<img src="https://images.ctfassets.net/23aumh6u8s0i/EYzWjMRx1fIiX9rU4Jd99/0a85c0549351669da425b614b6e82a8f/updated_logged_in_screen.png" alt="Demo app’s “Logged in” screen." width="250" />
-
 This repository contains completed version of the project featured in the Auth0 Blog **_Calling a protected API from an iOS Swift App_**. The article walks the viewer through the process of calling a protected API once integrated with [Auth0](https://auth0.com/) authentication in an iOS app based on the [SwiftUI](https://developer.apple.com/xcode/swiftui/) framework.
-
-The resulting app is simple, with two screens. The first is the “Logged out” screen, which appears when the app is launched:
-
-<img src="https://images.ctfassets.net/23aumh6u8s0i/2vCUITSZoWh5vx9rvaT23o/7f5a6ba12dd7948f2a93374a485e2abe/starter_app_1.png" alt="Demo app’s “Logged out” screen." width="250" />
-
-Tapping the **Log in** button starts the login process, which is handled by Auth0. The app delegates login to Auth0, which opens its web-based [Universal Login](https://auth0.com/docs/authenticate/login/auth0-universal-login) page, shown below:
-
-<img src="https://images.ctfassets.net/23aumh6u8s0i/6viU0brK9Sf7kefqWhCpcL/3c0ada420ad13f7cf3a952a433412f76/swiftui_app_acreen_2.png" width="250" />
-
-If the user provides valid login credentials, they are taken to the app’s “Logged in” screen:
-
-<img src="https://images.ctfassets.net/23aumh6u8s0i/EYzWjMRx1fIiX9rU4Jd99/0a85c0549351669da425b614b6e82a8f/updated_logged_in_screen.png" alt="Demo app’s “Logged in” screen." width="250" />
-
-This screen displays the following information gathered from the user’s profile:
-
-1. The user’s photo
-2. The user’s name
-3. The user’s email address
-
-Tapping the **Log out** button logs the user out and returns them to the initial “Logged out” screen.
-
 
 ## Getting Started
 
@@ -52,7 +29,7 @@ Tapping the **Log out** button logs the user out and returns them to the initial
 	- Select the **Auth0.swift** package that appears in the list of packages and in the **Dependency Rule** menu, select **Up to Next Major Version**.
 	- Click **Add Package**.
 
-4. Log into the Auth0 dashboard, select **Applications** → **Applications**, and register the app. The article covers this step in detail.
+4. Log into the Auth0 dashboard, select **Applications** → **Applications**, and register the app. The Auth0 Blog article covers this step in detail.
 5. Once you have registered the app, copy these values from the app’s *Settings* page in the Auth0 dashboard:
 
 	- `Domain`
