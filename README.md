@@ -2,7 +2,7 @@
 
 ## Project Description
 
-This repository contains completed version of the project featured in the Auth0 Blog **_Calling a protected API from an iOS Swift App_**. The article walks the viewer through the process of calling a protected API once integrated with [Auth0](https://auth0.com/) authentication in an iOS app based on the [SwiftUI](https://developer.apple.com/xcode/swiftui/) framework.
+This repository contains completed version of the project featured in the Auth0 Blog **_Calling a protected API from an iOS Swift App_**. The article walks you through the process of calling a protected API once integrated with [Auth0](https://auth0.com/) authentication in an iOS app based on the [SwiftUI](https://developer.apple.com/xcode/swiftui/) framework.
 
 ## Getting Started
 
