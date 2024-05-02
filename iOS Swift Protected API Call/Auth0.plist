@@ -3,8 +3,8 @@
 <plist version="1.0">
 <dict>
 	<key>Domain</key>
-	<string>devrel.eu.auth0.com</string>
+	<string>** Put your tenant’s domain here. **</string>
 	<key>ClientId</key>
-	<string>sSH58UhagsR4OGZGKB7CgFTeXNdCfgSk</string>
+	<string>** Put your app’s client ID here. **</string>
 </dict>
 </plist>
