@@ -78,7 +78,7 @@ class EventViewModel: ObservableObject {
     @Published var eventData = [Event]()
     
     func fetchData() async {
-        guard let downloadedEvents: [Event] = await WebService().downloadData(fromURL: "https://z3ncgzq181.execute-api.eu-north-1.amazonaws.com/default/events") else {return}
+        guard let downloadedEvents: [Event] = await WebService().downloadData(fromURL: "** Put your API path here. **") else {return}
         DispatchQueue.main.async {
             self.eventData = downloadedEvents
         }
